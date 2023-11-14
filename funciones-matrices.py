@@ -17,9 +17,11 @@ def can_or_cant(a1,a2):
 #El segundo elemento de la lista, en la que llamamos a la función "p()", nos da el número de columnas, es decir,
 #los elementos de cada elemento que integra la tupla
     if longitud1[1] == longitud2[0]:
-        print(f"CAN")
+        return True
+    # ponemos return True/False para no tener que modificar en un futuro esto en mas de un sitio
     else:
-        print(f"CANNOT")
+        return False
 #Si el número de columnas de una matriz coincide con el número de filas de la otra matriz, se puede multiplicar
 
 can_or_cant(m1,m2)
+
