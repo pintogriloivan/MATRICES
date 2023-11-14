@@ -2,11 +2,11 @@ m1 = ((2,3,5),(7,2,4))
 m2 = ((1,6),(7,2),(0,5))
 #Esta función nos determina cuantas columnas tiene la matriz y nos devuelve un número entero
 def p(m):
-    for i in m:
-        a=0
-        for n in i:
-            a+=1
-    return (a)
+    fila = m[0]
+    a = enumerate(fila)
+    # a nos da el numero de elementos que tiene "fila" que es el primer elemento de la lsita (matriz) m.
+    return a
+    # se podría poner --> return enumerate(m[0]) para dejarlo en una línea
 
 #Esta función nos determina si podemos o no multiplicar 2 matrices que le damos como argumentos
 def can_or_cant(a1,a2):
